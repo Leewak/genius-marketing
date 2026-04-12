@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors — Navy & White theme */
+  --color-brand-black: #282B59;
+  --color-brand-dark: #1e2147;
+  --color-brand-dark-2: #222550;
+  --color-brand-gold: #ffffff;
+  --color-brand-gold-light: #e8e8e8;
+  --color-brand-gold-dim: #ffffff26;
+  --color-brand-offwhite: #f0f0f8;
+  --color-brand-gray: #9aa0c8;
+  --color-brand-border: #3a3f8a;
+
+  /* Font families - populated by next/font CSS variables */
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-syne), ui-sans-serif, system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #282B59;
+  color: #f0f0f8;
+  font-family: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+  will-change: transform;
+}
+
+/* Floating orb animations for hero */
+@keyframes float-1 {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  33%       { transform: translateY(-40px) translateX(22px); }
+  66%       { transform: translateY(20px) translateX(-16px); }
+}
+
+@keyframes float-2 {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  33%       { transform: translateY(30px) translateX(-26px); }
+  66%       { transform: translateY(-26px) translateX(20px); }
+}
+
+@keyframes float-3 {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  50%       { transform: translateY(-30px) translateX(-12px); }
+}
+
+.animate-float-1 {
+  animation: float-1 9s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-2 12s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float-3 7.5s ease-in-out infinite;
+}
+
+/* WhatsApp floating button pulse */
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45), 0 4px 16px rgba(0,0,0,0.25); }
+  60%       { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0), 0 4px 16px rgba(0,0,0,0.25); }
+}
+
+.animate-wa-pulse {
+  animation: wa-pulse 2.4s ease-out infinite;
+}
+
+/* White shimmer gradient text (replaces gold gradient) */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #c0ccff 50%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Noise texture overlay */
+.noise-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Dot grid pattern — white dots on navy */
+.dot-grid {
+  background-image: radial-gradient(circle, #ffffff18 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #282B59;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff44;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff88;
+}
+
+/* Selection */
+::selection {
+  background-color: #ffffff33;
+  color: #f0f0f8;
+}
