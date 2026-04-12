@@ -90,7 +90,7 @@ export default function AProposPage() {
       </section>
 
       {/* b) Mission */}
-      <section className="bg-brand-dark py-20">
+      <section className="bg-brand-black py-20">
         <div className="max-w-4xl mx-auto px-5 sm:px-8 text-center">
           <AnimateOnScroll>
             <p className="text-white/70 text-lg sm:text-xl leading-relaxed">
@@ -106,7 +106,7 @@ export default function AProposPage() {
       </section>
 
       {/* c) Stats bar */}
-      <section className="bg-brand-dark pb-20">
+      <section className="bg-brand-black pb-20">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <div
             className="rounded-2xl overflow-hidden"
@@ -167,8 +167,8 @@ export default function AProposPage() {
             </AnimateOnScroll>
           </div>
 
-          {/* 2×2 grid on desktop, 1 col on mobile */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* Single column stack, max 900px */}
+          <div className="flex flex-col gap-4 max-w-[900px] mx-auto">
             {team.map((member, i) => (
               <AnimateOnScroll key={member.name} delay={i * 0.1}>
                 <TeamCard member={member} />
@@ -180,10 +180,7 @@ export default function AProposPage() {
 
       {/* e) CTA */}
       <section
-        className="py-24 lg:py-32 relative overflow-hidden"
-        style={{
-          background: "linear-gradient(135deg, #1e2147 0%, #282B59 50%, #1e2147 100%)",
-        }}
+        className="bg-brand-black py-24 lg:py-32 relative overflow-hidden"
       >
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
         <div className="relative z-10 max-w-2xl mx-auto px-5 sm:px-8 text-center">

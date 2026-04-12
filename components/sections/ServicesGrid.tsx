@@ -64,19 +64,8 @@ const services = [
 
 export function ServicesGrid() {
   return (
-    <section className="bg-brand-dark py-24 lg:py-32 relative overflow-hidden">
-      {/* bg4 — decorative right side element */}
-      <div
-        className="absolute right-0 top-0 bottom-0 pointer-events-none"
-        style={{
-          width: "40%",
-          backgroundImage: "url('/images/bg/agency9-home-bg4.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "left center",
-          opacity: 0.15,
-        }}
-      />
-      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8">
+    <section className="py-24 lg:py-32" style={{ background: "#282B59" }}>
+      <div className="max-w-7xl mx-auto px-5 sm:px-8">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
           <div>

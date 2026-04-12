@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
@@ -30,57 +29,63 @@ const item: Variants = {
   },
 };
 
+const pills = [
+  { label: "Innovation", delay: 0.9, className: "absolute -top-6 -left-16 animate-float-2" },
+  { label: "Créativité", delay: 1.1, className: "absolute top-1/2 -right-20 -translate-y-1/2 animate-float-1" },
+  { label: "Performance", delay: 1.3, className: "absolute -bottom-6 left-8 animate-float-3" },
+];
+
 export function Hero() {
   return (
     <section
       className="relative min-h-screen flex flex-col justify-center overflow-hidden"
-      style={{
-        backgroundImage: "url('/images/bg/agency9-home-bg1.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      style={{ background: "radial-gradient(ellipse at 60% 50%, #3a3f8a 0%, #282B59 50%, #1e2147 100%)" }}
     >
-      {/* bg1 overlay — screen blend */}
+      {/* Animated background orbs */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute pointer-events-none animate-float-1"
         style={{
-          backgroundImage: "url('/images/bg/agency9-home-bg1-overlay.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          mixBlendMode: "screen",
-          opacity: 0.6,
-          zIndex: 1,
+          top: "5%",
+          left: "-8%",
+          width: "520px",
+          height: "520px",
+          borderRadius: "50%",
+          background: "radial-gradient(circle, rgba(92,99,196,0.35) 0%, transparent 70%)",
+          filter: "blur(60px)",
+        }}
+      />
+      <div
+        className="absolute pointer-events-none animate-float-2"
+        style={{
+          top: "35%",
+          right: "-6%",
+          width: "420px",
+          height: "420px",
+          borderRadius: "50%",
+          background: "radial-gradient(circle, rgba(74,79,168,0.4) 0%, transparent 70%)",
+          filter: "blur(55px)",
+        }}
+      />
+      <div
+        className="absolute pointer-events-none animate-float-3"
+        style={{
+          bottom: "10%",
+          left: "15%",
+          width: "320px",
+          height: "320px",
+          borderRadius: "50%",
+          background: "radial-gradient(circle, rgba(58,63,138,0.5) 0%, transparent 70%)",
+          filter: "blur(45px)",
         }}
       />
 
-      {/* bg2 — sphere visual, right side (desktop only) */}
-      <div
-        className="absolute hidden lg:block pointer-events-none"
-        style={{
-          width: "55%",
-          right: "-5%",
-          top: "50%",
-          transform: "translateY(-50%)",
-          zIndex: 2,
-        }}
-      >
-        <Image
-          src="/images/bg/agency9-home-bg2.webp"
-          alt=""
-          width={1000}
-          height={1000}
-          className="w-full h-auto"
-          style={{ objectFit: "contain" }}
-        />
-      </div>
-
       {/* Dot grid overlay */}
-      <div className="absolute inset-0 dot-grid opacity-20 pointer-events-none" style={{ zIndex: 3 }} />
+      <div className="absolute inset-0 dot-grid opacity-20 pointer-events-none" />
 
       {/* Top accent line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" style={{ zIndex: 4 }} />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
-      <div className="relative max-w-7xl mx-auto px-5 sm:px-8 pt-36 pb-20 w-full" style={{ zIndex: 10 }}>
+      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 pt-36 pb-20 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Left — Text Content */}
@@ -115,7 +120,7 @@ export function Hero() {
               nous donnons à votre marque la présence digitale qu&apos;elle mérite.
             </motion.p>
 
-            {/* CTAs */}
+            {/* CTAs — stacked full-width on mobile, inline on sm+ */}
             <motion.div
               variants={item}
               className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4"
@@ -140,8 +145,83 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right — spacer for desktop layout (bg2 is absolute) */}
-          <div className="hidden lg:block" />
+          {/* Right — 3D Sphere Visual (desktop only) */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.85 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.1, delay: 0.35, ease: EASE }}
+            className="hidden lg:flex items-center justify-center"
+          >
+            <div className="relative w-80 h-80">
+              {/* Outer glow rings */}
+              <div
+                className="absolute inset-0 rounded-full border border-white/10 animate-float-3"
+                style={{ transform: "scale(1.32)" }}
+              />
+              <div
+                className="absolute inset-0 rounded-full border border-white/5"
+                style={{ transform: "scale(1.6)" }}
+              />
+
+              {/* Sphere body */}
+              <div
+                className="absolute inset-0 rounded-full"
+                style={{
+                  background:
+                    "radial-gradient(ellipse at 38% 33%, #8088e8, #6068d4 30%, #4a4fa8 60%, #3a3f8a 85%, #2c3178 100%)",
+                  boxShadow:
+                    "0 0 80px rgba(107,114,212,0.55), 0 0 160px rgba(74,79,168,0.25), inset 0 -28px 70px rgba(24,28,60,0.6)",
+                }}
+              />
+
+              {/* Specular highlight */}
+              <div
+                className="absolute rounded-full"
+                style={{
+                  top: "16%",
+                  left: "18%",
+                  width: "36%",
+                  height: "28%",
+                  background:
+                    "radial-gradient(ellipse, rgba(255,255,255,0.32) 0%, transparent 70%)",
+                  filter: "blur(5px)",
+                }}
+              />
+
+              {/* Secondary reflection */}
+              <div
+                className="absolute rounded-full"
+                style={{
+                  bottom: "18%",
+                  right: "20%",
+                  width: "18%",
+                  height: "12%",
+                  background:
+                    "radial-gradient(ellipse, rgba(192,204,255,0.2) 0%, transparent 70%)",
+                  filter: "blur(4px)",
+                }}
+              />
+
+              {/* Pill badges */}
+              {pills.map(({ label, delay, className }) => (
+                <motion.div
+                  key={label}
+                  initial={{ opacity: 0, scale: 0.75 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay, ease: EASE }}
+                  className={`${className} flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 rounded-full`}
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-white/60 shrink-0" />
+                  <span
+                    className="text-white/85 text-xs font-semibold uppercase tracking-widest whitespace-nowrap"
+                    style={{ fontFamily: "var(--font-syne)" }}
+                  >
+                    {label}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
 
         {/* Stats Bar */}
@@ -189,7 +269,7 @@ export function Hero() {
       {/* Bottom gradient fade */}
       <div
         className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
-        style={{ background: "linear-gradient(to top, #1e2147, transparent)", zIndex: 10 }}
+        style={{ background: "linear-gradient(to top, #1e2147, transparent)" }}
       />
     </section>
   );

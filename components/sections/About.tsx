@@ -39,18 +39,8 @@ const pillars = [
 
 export function About() {
   return (
-    <section
-      className="relative py-24 lg:py-32"
-      style={{
-        backgroundImage: "url('/images/bg/agency9-home-bg3.webp')",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        backgroundPosition: "center",
-      }}
-    >
-      {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-brand-black/80 pointer-events-none" />
-      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8">
+    <section className="py-24 lg:py-32" style={{ background: "#1e2147" }}>
+      <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left — Text */}
           <div>

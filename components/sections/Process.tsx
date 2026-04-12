@@ -55,16 +55,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section
-      className="relative py-24 lg:py-32 overflow-hidden"
-      style={{
-        backgroundImage: "url('/images/bg/agency9-home-bg5.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-brand-dark/88 pointer-events-none" />
+    <section className="py-24 lg:py-32 relative overflow-hidden" style={{ background: "#1e2147" }}>
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">

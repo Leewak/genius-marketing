@@ -6,19 +6,9 @@ export function CTASection() {
     <section
       className="py-24 lg:py-32 relative overflow-hidden"
       style={{
-        backgroundImage: "url('/images/bg/agency9-home-bg5.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        background: "linear-gradient(135deg, #1e2147 0%, #282B59 100%)",
       }}
     >
-      {/* Gradient overlay */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(135deg, rgba(30,33,71,0.93) 0%, rgba(40,43,89,0.88) 50%, rgba(30,33,71,0.93) 100%)",
-        }}
-      />
       {/* Large central blurred circle */}
       <div
         className="absolute pointer-events-none"

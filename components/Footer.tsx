@@ -19,33 +19,9 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer
-      className="relative overflow-hidden"
-      style={{
-        borderTop: "1px solid rgba(255,255,255,0.1)",
-        backgroundImage: "url('/images/bg/agency9-footer-bg1.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-brand-dark/90 pointer-events-none" />
-
-      {/* Decorative footer icon */}
-      <div
-        className="absolute bottom-0 right-0 pointer-events-none"
-        style={{ opacity: 0.08, width: "300px", height: "300px" }}
-      >
-        <Image
-          src="/images/bg/agency9-footer-icon1.webp"
-          alt=""
-          fill
-          style={{ objectFit: "contain", objectPosition: "bottom right" }}
-        />
-      </div>
-
+    <footer style={{ background: "#1a1d4a", borderTop: "1px solid rgba(255,255,255,0.1)" }}>
       {/* Main Footer */}
-      <div className="relative z-[1] max-w-7xl mx-auto px-5 sm:px-8 py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-1">
@@ -177,7 +153,7 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="relative z-[1]" style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+      <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
         <div className="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/30 text-xs">
             © {currentYear} Genius Marketing. Tous droits réservés.

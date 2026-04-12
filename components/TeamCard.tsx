@@ -27,7 +27,7 @@ export function TeamCard({ member }: { member: TeamMember }) {
       {/* Photo */}
       <div
         className="relative flex-shrink-0 overflow-hidden"
-        style={{ width: "100px", height: "120px", borderRadius: "10px" }}
+        style={{ width: "130px", height: "160px", borderRadius: "16px" }}
       >
         <Image
           src={member.photo}

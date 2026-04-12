@@ -13,15 +13,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section
-        className="relative pt-36 pb-24 overflow-hidden"
-        style={{
-          backgroundImage: "url('/images/bg/agency9-contact-bg1.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-brand-black/85 pointer-events-none" />
+      <section className="relative pt-36 pb-24 overflow-hidden" style={{ background: "#282B59" }}>
         <div className="absolute inset-0 dot-grid opacity-30 pointer-events-none" />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8">
