@@ -16,6 +16,7 @@ const team: TeamMember[] = [
     description:
       "Dirige la vision stratégique de l'agence et accompagne les entreprises dans leur croissance digitale avec une approche orientée résultats.",
     photo: "/images/team/chaymae.webp",
+    email: "chaymae@geniusmarketing.ma",
   },
   {
     name: "Hanae",
@@ -23,6 +24,7 @@ const team: TeamMember[] = [
     description:
       "Coordonne les projets de A à Z et assure leur réussite en garantissant qualité, respect des délais et satisfaction client.",
     photo: "/images/team/hanae.webp",
+    email: "hanae@geniusmarketing.ma",
   },
   {
     name: "Yassmine",
@@ -30,6 +32,7 @@ const team: TeamMember[] = [
     description:
       "Développe les relations clients et identifie les meilleures opportunités pour accompagner les entreprises dans leurs projets digitaux.",
     photo: "/images/team/yassmine.webp",
+    email: "yassmine@geniusmarketing.ma",
   },
   {
     name: "Khalid",
@@ -37,6 +40,7 @@ const team: TeamMember[] = [
     description:
       "Conçoit des solutions digitales performantes en combinant développement web, SEO et optimisation technique.",
     photo: "/images/team/khalid.webp",
+    email: "khalid@geniusmarketing.ma",
   },
 ];
 

@@ -19,6 +19,7 @@ export interface TeamMember {
   role: string;
   description: string;
   photo: string;
+  email?: string;
 }
 
 export function TeamCard({ member }: { member: TeamMember }) {
@@ -34,7 +35,7 @@ export function TeamCard({ member }: { member: TeamMember }) {
           "0 16px 48px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.15)",
       }}
       transition={{ duration: 0.3, ease: EASE }}
-      className="flex items-center gap-6 rounded-[20px] p-6"
+      className="team-card flex items-center gap-6 rounded-[20px] p-6"
       style={{
         background: "rgba(255,255,255,0.06)",
         backdropFilter: "blur(20px)",
@@ -112,6 +113,32 @@ export function TeamCard({ member }: { member: TeamMember }) {
         >
           {member.description}
         </p>
+        {member.email && (
+          <a
+            href={`mailto:${member.email}`}
+            className="team-email-reveal"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "0.5rem",
+              marginTop: "1rem",
+              paddingTop: "0.875rem",
+              borderTop: "1px solid rgba(255,255,255,0.08)",
+              color: "rgba(255,255,255,0)",
+              fontSize: "0.78rem",
+              letterSpacing: "0.02em",
+              textDecoration: "none",
+              opacity: 0,
+              transform: "translateY(4px)",
+            }}
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            {member.email}
+          </a>
+        )}
       </div>
     </motion.div>
   );
