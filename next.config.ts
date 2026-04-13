@@ -1,6 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/a-propos",
+        destination: "/agence-marketing-marrakech",
+        permanent: true,
+      },
+      {
+        source: "/a-propos/",
+        destination: "/agence-marketing-marrakech",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     formats: ["image/webp", "image/avif"],
     minimumCacheTTL: 60,

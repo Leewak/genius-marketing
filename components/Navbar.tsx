@@ -8,8 +8,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { href: "/", label: "Accueil" },
-  { href: "/a-propos", label: "À Propos" },
+  { href: "/agence-marketing-marrakech", label: "À Propos" },
   { href: "/services", label: "Services" },
+  { href: "/marketing-digital-marrakech", label: "Marketing Digital" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];

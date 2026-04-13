@@ -3,9 +3,14 @@ import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Accueil" },
-  { href: "/a-propos", label: "À Propos" },
+  { href: "/agence-marketing-marrakech", label: "À Propos" },
   { href: "/services", label: "Services" },
   { href: "/contact", label: "Contact" },
+];
+
+const usefulLinks = [
+  { href: "/marketing-digital-marrakech", label: "Marketing Digital Marrakech" },
+  { href: "/blog", label: "Blog" },
 ];
 
 const services = [
@@ -22,7 +27,7 @@ export function Footer() {
     <footer style={{ background: "#1a1d4a", borderTop: "1px solid rgba(255,255,255,0.1)" }}>
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-5 sm:px-8 py-16 lg:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-6">
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-5">
@@ -94,6 +99,28 @@ export function Footer() {
             </h4>
             <ul className="space-y-3">
               {services.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-brand-gray text-sm hover:text-brand-gold transition-colors duration-200"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Liens utiles */}
+          <div>
+            <h4
+              className="text-brand-offwhite text-sm font-semibold uppercase tracking-widest mb-5"
+              style={{ fontFamily: "var(--font-syne)" }}
+            >
+              Liens utiles
+            </h4>
+            <ul className="space-y-3">
+              {usefulLinks.map(({ href, label }) => (
                 <li key={href}>
                   <Link
                     href={href}
