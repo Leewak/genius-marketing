@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 import { posts } from "@/lib/blog";
 
@@ -47,15 +48,15 @@ export function BlogTeaser() {
                     background: "rgba(255,255,255,0.04)",
                   }}
                 >
-                  {/* Image placeholder */}
-                  <div
-                    className="flex-shrink-0 rounded-xl"
-                    style={{
-                      width: "80px",
-                      height: "72px",
-                      background: "linear-gradient(135deg, #1e2147 0%, #3a3f8a 100%)",
-                    }}
-                  />
+                  {/* Thumbnail */}
+                  <div style={{ position: "relative", width: "80px", height: "80px", borderRadius: "10px", overflow: "hidden", flexShrink: 0 }}>
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
 
                   {/* Text */}
                   <div className="flex-1 min-w-0">

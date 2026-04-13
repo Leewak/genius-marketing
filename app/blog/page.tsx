@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 import { posts } from "@/lib/blog";
 
@@ -59,15 +60,14 @@ export default function BlogPage() {
                       background: "rgba(255,255,255,0.04)",
                     }}
                   >
-                    {/* Image placeholder */}
-                    <div
-                      className="relative flex-shrink-0"
-                      style={{
-                        height: "220px",
-                        background: "linear-gradient(135deg, #1e2147 0%, #282B59 100%)",
-                        borderRadius: "16px 16px 0 0",
-                      }}
-                    >
+                    {/* Image */}
+                    <div style={{ position: "relative", height: "220px", borderRadius: "12px 12px 0 0", overflow: "hidden" }}>
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        style={{ objectFit: "cover", objectPosition: "center" }}
+                      />
                       <span
                         className="absolute top-4 left-4 text-white/60 text-xs font-medium uppercase tracking-widest px-3 py-1 rounded-full"
                         style={{
