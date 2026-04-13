@@ -10,12 +10,10 @@ import { CTASection } from "@/components/sections/CTASection";
 import { BlogTeaser } from "@/components/sections/BlogTeaser";
 
 export const metadata: Metadata = {
-  title: "Genius Marketing — Agence Digitale à Marrakech",
+  title: "Agence Marketing Digital à Marrakech | Genius Marketing",
   description:
-    "Genius Marketing, agence de marketing digital à Marrakech. Création de sites web, SEO, design UX et stratégie marketing. 2000+ projets, 90% de satisfaction.",
-  alternates: {
-    canonical: "https://geniusmarketing.ma",
-  },
+    "Genius Marketing, votre agence digitale à Marrakech. Création de sites web professionnels, SEO, stratégie marketing et branding pour développer votre entreprise au Maroc.",
+  alternates: { canonical: "https://geniusmarketing.ma" },
 };
 
 const jsonLd = {

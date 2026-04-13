@@ -3,9 +3,9 @@ import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 import { TeamCard, type TeamMember } from "@/components/TeamCard";
 
 export const metadata: Metadata = {
-  title: "À Propos — Notre Équipe & Notre Mission",
+  title: "À Propos – Notre Équipe & Notre Mission | Genius Marketing Marrakech",
   description:
-    "Découvrez l'équipe Genius Marketing : Chaymae, Hanae, Yassmine et Khalid — des experts passionnés par votre croissance digitale à Marrakech.",
+    "Découvrez l'équipe Genius Marketing, agence digitale fondée à Marrakech. Notre mission : propulser les entreprises marocaines vers le succès digital.",
   alternates: { canonical: "https://geniusmarketing.ma/a-propos" },
 };
 

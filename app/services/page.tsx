@@ -4,9 +4,9 @@ import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Nos Services — Marketing Digital, SEO, Design Web",
+  title: "Nos Services Marketing Digital – Création Web, SEO, Branding | Genius Marketing",
   description:
-    "Découvrez tous les services de Genius Marketing : création de sites web, SEO, design UX et stratégie marketing à Marrakech.",
+    "Découvrez tous nos services : création de sites web, référencement SEO, design UX et stratégie marketing digital à Marrakech.",
   alternates: { canonical: "https://geniusmarketing.ma/services" },
 };
 

@@ -3,9 +3,9 @@ import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — Demander un Devis Gratuit",
+  title: "Contact – Demander un Devis Gratuit | Genius Marketing Marrakech",
   description:
-    "Contactez Genius Marketing à Marrakech. Demandez un devis gratuit pour votre projet web, SEO ou stratégie marketing. Réponse en 24h.",
+    "Contactez Genius Marketing à Marrakech. Consultation gratuite pour votre projet web, SEO ou marketing digital. Réponse sous 24h.",
   alternates: { canonical: "https://geniusmarketing.ma/contact" },
 };
 

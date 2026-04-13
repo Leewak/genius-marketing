@@ -5,9 +5,9 @@ import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 import { posts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog & Ressources — Genius Marketing",
+  title: "Blog Marketing Digital – Conseils SEO & Stratégies Web | Genius Marketing",
   description:
-    "Conseils d'experts en marketing digital, SEO et création web pour développer votre présence digitale à Marrakech et au Maroc.",
+    "Blog de Genius Marketing : conseils SEO, stratégies de marketing digital, création de sites web. Ressources gratuites pour développer votre présence en ligne.",
   alternates: { canonical: "https://geniusmarketing.ma/blog" },
 };
 

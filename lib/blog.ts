@@ -1,18 +1,31 @@
 export const posts = [
   {
-    slug: 'creation-site-web-marrakech-guide-complet',
-    title: 'Création de Site Web à Marrakech : Le Guide Complet pour Réussir Votre Présence en Ligne',
-    excerpt: 'Découvrez tout ce que vous devez savoir pour créer un site web professionnel à Marrakech. De la conception au lancement, notre guide complet vous accompagne étape par étape.',
-    category: 'Création Web',
-    date: '12 Mars 2026',
-    readTime: '8 min',
-    image: '/images/blog/blog-1.jpg',
+    slug: "creation-site-web-marrakech-guide-complet",
+    title:
+      "Création de Site Web à Marrakech : Le Guide Complet pour Réussir Votre Présence en Ligne",
+    excerpt:
+      "Découvrez tout ce que vous devez savoir pour créer un site web professionnel à Marrakech. De la conception au lancement, notre guide complet vous accompagne étape par étape.",
+    category: "Création Web",
+    date: "12 Mars 2026",
+    readTime: "8 min",
+    wordCount: 900,
+    image: "/images/blog/blog-1.jpg",
+    tags: [
+      "création site web",
+      "site web marrakech",
+      "agence web marrakech",
+      "wordpress marrakech",
+      "e-commerce maroc",
+    ],
+    metaTitle: "Création Site Web à Marrakech : Guide Complet 2026",
+    metaDescription:
+      "Tout savoir sur la création de site web à Marrakech : types de sites, étapes clés, tarifs et conseils pour réussir votre présence en ligne.",
     content: `
 ## Pourquoi votre entreprise a besoin d'un site web professionnel
 
 Dans un monde de plus en plus connecté, ne pas avoir de site web revient à ne pas exister pour une grande partie de vos clients potentiels. À Marrakech, la concurrence digitale s'intensifie chaque année. Les entreprises qui investissent dans une présence en ligne solide captent des parts de marché considérables face à celles qui n'ont pas encore franchi le pas.
 
-Un site web professionnel n'est pas une dépense — c'est un investissement qui travaille pour vous 24h/24, 7j/7. Il génère des leads, rassure vos prospects, présente vos services et construit votre crédibilité.
+Un site web professionnel n'est pas une dépense — c'est un investissement qui travaille pour vous 24h/24, 7j/7. Il génère des leads, rassure vos prospects, présente vos services et construit votre crédibilité. Combinez-le avec une bonne [stratégie SEO](/services/seo-marketing) et vous obtenez un moteur de croissance automatique.
 
 ## Les différents types de sites web
 
@@ -40,10 +53,10 @@ Avant de commencer, posez-vous les bonnes questions : Quel est l'objectif princi
 En fonction de vos objectifs et de votre budget, choisissez la technologie adaptée : WordPress, Next.js, Shopify pour l'e-commerce, etc.
 
 ### 3. Concevoir l'expérience utilisateur
-Un bon site web doit être intuitif et agréable à utiliser. L'UX (expérience utilisateur) est fondamentale pour convertir vos visiteurs en clients.
+Un bon site web doit être intuitif et agréable à utiliser. L'UX (expérience utilisateur) est fondamentale pour convertir vos visiteurs en clients. Notre équipe de [design web & UX](/services/design-ux) s'en charge pour vous.
 
 ### 4. Optimiser pour le SEO dès le départ
-Le SEO ne s'ajoute pas après coup — il se construit dès la conception. Structure des URLs, balises meta, vitesse de chargement : chaque élément compte.
+Le [référencement naturel](/services/seo-marketing) ne s'ajoute pas après coup — il se construit dès la conception. Structure des URLs, balises meta, vitesse de chargement : chaque élément compte.
 
 ### 5. Tester et lancer
 Avant la mise en ligne, testez votre site sur tous les appareils (mobile, tablette, desktop) et dans différents navigateurs.
@@ -59,25 +72,37 @@ Les tarifs varient en fonction du type de site et du niveau de personnalisation 
 
 ## Conclusion
 
-Créer un site web professionnel est l'une des meilleures décisions que vous pouvez prendre pour votre entreprise. Chez Genius Marketing, nous accompagnons les entrepreneurs de Marrakech et du Maroc entier dans la création de sites web performants, optimisés et orientés conversion.
+Créer un site web professionnel est l'une des meilleures décisions que vous pouvez prendre pour votre entreprise. Chez Genius Marketing, nous accompagnons les entrepreneurs de Marrakech et du Maroc entier dans la [création de sites web](/services/creation-site-web) performants, optimisés et orientés conversion.
 
 Contactez-nous pour une consultation gratuite et découvrez comment nous pouvons transformer votre présence digitale.
-    `
+    `,
   },
   {
-    slug: 'seo-marrakech-comment-etre-premier-google',
-    title: 'SEO à Marrakech : Comment Être en Premier sur Google et Développer Votre Entreprise',
-    excerpt: "Le référencement naturel est l'arme secrète des entreprises qui dominent leur marché. Découvrez les stratégies SEO qui fonctionnent vraiment pour les entreprises marocaines.",
-    category: 'SEO & Marketing',
-    date: '28 Février 2026',
-    readTime: '10 min',
-    image: '/images/blog/blog-2.jpg',
+    slug: "seo-marrakech-comment-etre-premier-google",
+    title:
+      "SEO à Marrakech : Comment Être en Premier sur Google et Développer Votre Entreprise",
+    excerpt:
+      "Le référencement naturel est l'arme secrète des entreprises qui dominent leur marché. Découvrez les stratégies SEO qui fonctionnent vraiment pour les entreprises marocaines.",
+    category: "SEO & Marketing",
+    date: "28 Février 2026",
+    readTime: "10 min",
+    wordCount: 950,
+    image: "/images/blog/blog-2.jpg",
+    tags: [
+      "seo marrakech",
+      "référencement naturel",
+      "google my business marrakech",
+      "agence seo maroc",
+    ],
+    metaTitle: "SEO à Marrakech : Être Premier sur Google en 2026",
+    metaDescription:
+      "Stratégies SEO qui fonctionnent pour les entreprises marocaines. Référencement local, Google My Business et optimisation technique expliqués.",
     content: `
 ## Qu'est-ce que le SEO et pourquoi est-il crucial pour votre business ?
 
 Le SEO (Search Engine Optimization) ou référencement naturel désigne l'ensemble des techniques qui permettent à votre site web d'apparaître en tête des résultats de recherche Google — sans payer de publicité.
 
-À Marrakech, des milliers de personnes cherchent chaque jour des produits et services sur Google. "Restaurant à Marrakech", "agence marketing Marrakech", "plombier Marrakech urgence"... Ces recherches représentent des opportunités commerciales concrètes. La question est : est-ce que votre entreprise apparaît ?
+À Marrakech, des milliers de personnes cherchent chaque jour des produits et services sur Google. "Restaurant à Marrakech", "agence marketing Marrakech", "plombier Marrakech urgence"... Ces recherches représentent des opportunités commerciales concrètes. La question est : est-ce que votre entreprise apparaît ? Si votre [site web](/services/creation-site-web) n'est pas optimisé pour le SEO, vous passez à côté de clients qui vous cherchent activement.
 
 ## Les 3 piliers du SEO
 
@@ -138,23 +163,35 @@ Le SEO est un investissement long terme. Voici les délais réalistes :
 
 ## Conclusion
 
-Le SEO est l'investissement marketing avec le meilleur ROI sur le long terme. Une fois bien positionné sur Google, votre trafic est gratuit et qualifié. Chez Genius Marketing, nous mettons en place des stratégies SEO complètes adaptées au marché marocain.
-    `
+Le SEO est l'investissement [marketing digital](/services/strategie-marketing) avec le meilleur ROI sur le long terme. Une fois bien positionné sur Google, votre trafic est gratuit et qualifié. Chez Genius Marketing, nous mettons en place des [stratégies SEO](/services/seo-marketing) complètes adaptées au marché marocain.
+    `,
   },
   {
-    slug: 'marketing-digital-marrakech-developper-entreprise',
-    title: "Marketing Digital à Marrakech : Comment Développer Votre Entreprise à l'Ère du Numérique",
-    excerpt: "Le marketing digital transforme la façon dont les entreprises marocaines trouvent leurs clients. Découvrez les stratégies qui fonctionnent en 2026 pour propulser votre croissance.",
-    category: 'Stratégie Digitale',
-    date: '15 Janvier 2026',
-    readTime: '7 min',
-    image: '/images/blog/blog-3.jpg',
+    slug: "marketing-digital-marrakech-developper-entreprise",
+    title:
+      "Marketing Digital à Marrakech : Comment Développer Votre Entreprise à l'Ère du Numérique",
+    excerpt:
+      "Le marketing digital transforme la façon dont les entreprises marocaines trouvent leurs clients. Découvrez les stratégies qui fonctionnent en 2026 pour propulser votre croissance.",
+    category: "Stratégie Digitale",
+    date: "15 Janvier 2026",
+    readTime: "7 min",
+    wordCount: 850,
+    image: "/images/blog/blog-3.jpg",
+    tags: [
+      "marketing digital marrakech",
+      "stratégie digitale maroc",
+      "réseaux sociaux maroc",
+      "google ads marrakech",
+    ],
+    metaTitle: "Marketing Digital à Marrakech : Guide Stratégique 2026",
+    metaDescription:
+      "Stratégies de marketing digital qui fonctionnent pour les entreprises marocaines en 2026. Réseaux sociaux, SEO, Google Ads et content marketing.",
     content: `
 ## Le marketing digital au Maroc en 2026 : état des lieux
 
 Le Maroc compte plus de 30 millions d'internautes, dont une grande majorité accède à internet via mobile. Les réseaux sociaux comme Instagram, Facebook et TikTok sont devenus des canaux incontournables pour toucher les consommateurs marocains.
 
-À Marrakech, ville internationale et hub touristique, le digital représente une opportunité exceptionnelle pour les entreprises qui souhaitent toucher aussi bien les clients locaux qu'internationaux.
+À Marrakech, ville internationale et hub touristique, le digital représente une opportunité exceptionnelle pour les entreprises qui souhaitent toucher aussi bien les clients locaux qu'internationaux. Un [site web professionnel](/services/creation-site-web) est la base de toute stratégie digitale réussie.
 
 ## Les canaux du marketing digital
 
@@ -168,7 +205,7 @@ Les réseaux sociaux sont le canal le plus utilisé par les Marocains. Instagram
 - Utiliser la publicité payante pour amplifier votre portée
 
 ### Google Ads (SEA)
-Les campagnes Google Ads permettent d'apparaître immédiatement en tête des résultats de recherche pour vos mots-clés cibles. Contrairement au SEO, les résultats sont immédiats.
+Les campagnes Google Ads permettent d'apparaître immédiatement en tête des résultats de recherche pour vos mots-clés cibles. Contrairement au [référencement naturel](/services/seo-marketing), les résultats sont immédiats.
 
 **Avantages :**
 - Résultats immédiats
@@ -199,17 +236,17 @@ Le marketing digital a l'avantage d'être entièrement mesurable. Les indicateur
 
 ## Construire une stratégie cohérente
 
-Le secret d'une stratégie digitale efficace est la cohérence entre tous vos canaux. Votre message, votre identité visuelle et votre ton doivent être uniformes sur votre site web, vos réseaux sociaux et vos emailings.
+Le secret d'une [stratégie marketing digital](/services/strategie-marketing) efficace est la cohérence entre tous vos canaux. Votre message, votre identité visuelle et votre ton doivent être uniformes sur votre site web, vos réseaux sociaux et vos emailings.
 
 ## Conclusion
 
 Le marketing digital n'est plus une option pour les entreprises marocaines — c'est une nécessité. Genius Marketing accompagne les entreprises de Marrakech dans la construction de stratégies digitales cohérentes, performantes et orientées résultats.
-    `
-  }
-]
+    `,
+  },
+];
 
-export type Post = typeof posts[0]
+export type Post = (typeof posts)[0];
 
 export function getPost(slug: string) {
-  return posts.find(p => p.slug === slug)
+  return posts.find((p) => p.slug === slug);
 }
