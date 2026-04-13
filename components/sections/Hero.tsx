@@ -85,14 +85,24 @@ export function Hero() {
       {/* Top accent line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 pt-36 pb-20 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 pt-40 pb-24 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Left — Text Content */}
           <motion.div variants={container} initial="hidden" animate="visible">
             {/* Eyebrow */}
             <motion.div variants={item} className="mb-8">
-              <span className="inline-flex items-center gap-2 border border-white/20 bg-white/5 text-white text-xs font-medium uppercase tracking-widest px-4 py-2 rounded-full">
+              <span
+                className="inline-flex items-center gap-2 border border-white/20 bg-white/[0.06] text-white/70 font-medium uppercase rounded-full"
+                style={{
+                  fontSize: "0.7rem",
+                  letterSpacing: "0.18em",
+                  padding: "0.4rem 1rem",
+                  borderRadius: "100px",
+                  backdropFilter: "blur(8px)",
+                  WebkitBackdropFilter: "blur(8px)",
+                }}
+              >
                 <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                 Agence Digitale — Marrakech, Maroc
               </span>
@@ -101,8 +111,15 @@ export function Hero() {
             {/* Headline */}
             <motion.h1
               variants={item}
-              className="text-[clamp(2.2rem,10vw,5.5rem)] leading-[1.05] font-bold tracking-tight mb-8 text-white"
-              style={{ fontFamily: "var(--font-syne)" }}
+              className="text-white mb-5"
+              style={{
+                fontFamily: "var(--font-syne)",
+                fontSize: "clamp(2.8rem, 5vw, 4.5rem)",
+                fontWeight: 700,
+                lineHeight: 1.15,
+                letterSpacing: "-0.03em",
+                maxWidth: "680px",
+              }}
             >
               Nous propulsons
               <br />
@@ -114,7 +131,14 @@ export function Hero() {
             {/* Subtitle */}
             <motion.p
               variants={item}
-              className="text-brand-gray text-lg sm:text-xl leading-relaxed max-w-xl mb-10"
+              className="mb-8"
+              style={{
+                fontSize: "clamp(0.95rem, 1.4vw, 1.05rem)",
+                color: "rgba(255,255,255,0.6)",
+                maxWidth: "480px",
+                lineHeight: 1.75,
+                fontWeight: 300,
+              }}
             >
               Création de sites web, SEO, design UX et stratégie marketing —
               nous donnons à votre marque la présence digitale qu&apos;elle mérite.
