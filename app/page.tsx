@@ -7,6 +7,7 @@ import { Benefits } from "@/components/sections/Benefits";
 import { Process } from "@/components/sections/Process";
 import { TeamTeaser } from "@/components/sections/TeamTeaser";
 import { CTASection } from "@/components/sections/CTASection";
+import { BlogTeaser } from "@/components/sections/BlogTeaser";
 
 export const metadata: Metadata = {
   title: "Genius Marketing — Agence Digitale à Marrakech",
@@ -112,6 +113,7 @@ export default function HomePage() {
       <Process />
       <TeamTeaser />
       <CTASection />
+      <BlogTeaser />
     </>
   );
 }

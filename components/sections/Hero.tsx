@@ -114,11 +114,11 @@ export function Hero() {
               className="text-white mb-5"
               style={{
                 fontFamily: "var(--font-syne)",
-                fontSize: "clamp(2.8rem, 5vw, 4.5rem)",
+                fontSize: "clamp(2rem, 3.5vw, 3.2rem)",
                 fontWeight: 700,
-                lineHeight: 1.15,
-                letterSpacing: "-0.03em",
-                maxWidth: "680px",
+                lineHeight: 1.2,
+                letterSpacing: "-0.02em",
+                maxWidth: "600px",
               }}
             >
               Nous propulsons
