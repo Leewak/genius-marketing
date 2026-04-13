@@ -5,6 +5,15 @@ import { motion } from "framer-motion";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
+const GLOW_COLORS: Record<string, string> = {
+  Chaymae: "rgba(120, 100, 255, 0.35)",
+  Hanae: "rgba(80, 140, 255, 0.35)",
+  Yassmine: "rgba(100, 180, 255, 0.35)",
+  Khalid: "rgba(60, 100, 220, 0.35)",
+};
+
+const DEFAULT_GLOW = "rgba(100, 120, 255, 0.35)";
+
 export interface TeamMember {
   name: string;
   role: string;
@@ -13,54 +22,92 @@ export interface TeamMember {
 }
 
 export function TeamCard({ member }: { member: TeamMember }) {
+  const glowColor = GLOW_COLORS[member.name] ?? DEFAULT_GLOW;
+
   return (
     <motion.div
-      whileHover={{ y: -3 }}
+      whileHover={{
+        y: -4,
+        backgroundColor: "rgba(255,255,255,0.09)",
+        borderColor: "rgba(255,255,255,0.2)",
+        boxShadow:
+          "0 16px 48px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.15)",
+      }}
       transition={{ duration: 0.3, ease: EASE }}
-      className="flex items-center gap-6 border border-white/[0.12] hover:border-white/25 transition-all duration-300 rounded-2xl p-6"
+      className="flex items-center gap-6 rounded-[20px] p-6"
       style={{
         background: "rgba(255,255,255,0.06)",
-        backdropFilter: "blur(12px)",
-        WebkitBackdropFilter: "blur(12px)",
+        backdropFilter: "blur(20px)",
+        WebkitBackdropFilter: "blur(20px)",
+        border: "1px solid rgba(255,255,255,0.12)",
+        boxShadow:
+          "0 8px 32px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1)",
       }}
     >
-      {/* Photo */}
-      <div
-        className="relative flex-shrink-0 overflow-hidden"
-        style={{ width: "130px", height: "160px", borderRadius: "16px" }}
-      >
-        <Image
-          src={member.photo}
-          alt={member.name}
-          fill
-          sizes="100px"
-          className="object-cover object-top"
+      {/* Photo with glow */}
+      <div style={{ position: "relative", flexShrink: 0 }}>
+        {/* Glow layer */}
+        <div
+          style={{
+            position: "absolute",
+            inset: "-8px",
+            borderRadius: "18px",
+            background: `radial-gradient(circle, ${glowColor} 0%, rgba(40,43,89,0) 70%)`,
+            filter: "blur(12px)",
+            zIndex: 0,
+          }}
         />
+        {/* Photo */}
+        <div
+          style={{
+            position: "relative",
+            zIndex: 1,
+            width: "130px",
+            height: "160px",
+            borderRadius: "14px",
+            overflow: "hidden",
+            border: "1px solid rgba(255,255,255,0.15)",
+          }}
+        >
+          <Image
+            src={member.photo}
+            alt={member.name}
+            fill
+            sizes="130px"
+            className="object-cover object-top"
+          />
+        </div>
       </div>
 
       {/* Text */}
-      <div className="flex-1 min-w-0">
+      <div className="flex-1 min-w-0" style={{ position: "relative", zIndex: 1 }}>
         <h3
-          className="text-white font-bold mb-1"
-          style={{ fontFamily: "var(--font-syne)", fontSize: "1.1rem" }}
+          className="text-white"
+          style={{
+            fontFamily: "var(--font-syne)",
+            fontWeight: 700,
+            fontSize: "1.15rem",
+            marginBottom: "0.2rem",
+          }}
         >
           {member.name}
         </h3>
         <p
-          className="mb-2"
           style={{
-            fontFamily: "var(--font-syne)",
             fontSize: "0.8rem",
-            color: "rgba(255,255,255,0.6)",
+            color: "rgba(255,255,255,0.5)",
+            letterSpacing: "0.08em",
+            textTransform: "uppercase",
+            marginBottom: "0.6rem",
           }}
         >
           {member.role}
         </p>
         <p
           style={{
-            fontSize: "0.82rem",
+            fontSize: "0.85rem",
             color: "rgba(255,255,255,0.45)",
-            lineHeight: "1.6",
+            lineHeight: "1.65",
           }}
         >
           {member.description}

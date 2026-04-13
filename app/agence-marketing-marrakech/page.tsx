@@ -144,8 +144,24 @@ export default function AProposPage() {
       </section>
 
       {/* d) Team grid */}
-      <section className="bg-brand-black py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-5 sm:px-8">
+      <section className="bg-brand-black py-24 lg:py-32" style={{ position: "relative", overflow: "hidden" }}>
+        {/* Ambient glow */}
+        <div
+          style={{
+            position: "absolute",
+            width: "600px",
+            height: "600px",
+            borderRadius: "50%",
+            background: "radial-gradient(circle, rgba(60,80,200,0.12) 0%, transparent 70%)",
+            filter: "blur(60px)",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            pointerEvents: "none",
+            zIndex: 0,
+          }}
+        />
+        <div className="max-w-7xl mx-auto px-5 sm:px-8" style={{ position: "relative", zIndex: 1 }}>
           <div className="text-center max-w-2xl mx-auto mb-16">
             <AnimateOnScroll>
               <span
