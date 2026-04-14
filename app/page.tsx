@@ -8,6 +8,7 @@ import { Process } from "@/components/sections/Process";
 import { TeamTeaser } from "@/components/sections/TeamTeaser";
 import { CTASection } from "@/components/sections/CTASection";
 import { BlogTeaser } from "@/components/sections/BlogTeaser";
+import { PortfolioTeaser } from "@/components/sections/PortfolioTeaser";
 
 export const metadata: Metadata = {
   title: "Agence Marketing Digital à Marrakech | Genius Marketing",
@@ -107,6 +108,7 @@ export default function HomePage() {
       <TickerBand />
       <About />
       <ServicesGrid />
+      <PortfolioTeaser />
       <Benefits />
       <Process />
       <TeamTeaser />

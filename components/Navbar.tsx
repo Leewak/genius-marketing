@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/", label: "Accueil" },
   { href: "/agence-marketing-marrakech", label: "À Propos" },
   { href: "/services", label: "Services" },
+  { href: "/references", label: "Références" },
   { href: "/marketing-digital-marrakech", label: "Marketing Digital" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },

@@ -12,10 +12,17 @@ const services = [
     description:
       "Sites vitrines, e-commerce, WordPress & SEO on-page. Des sites performants qui convertissent vos visiteurs en clients.",
     tags: ["Vitrine", "E-Commerce", "WordPress", "SEO On-page"],
-    icon: (
-      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="3" width="18" height="18" rx="2"/>
-        <path d="M3 9h18M9 21V9"/>
+    illustration: (
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <rect x="4" y="8" width="40" height="32" rx="4" stroke="rgba(255,255,255,0.3)" strokeWidth="1.5"/>
+        <rect x="4" y="8" width="40" height="8" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" strokeWidth="1.5"/>
+        <circle cx="11" cy="12" r="2" fill="rgba(255,255,255,0.4)"/>
+        <circle cx="18" cy="12" r="2" fill="rgba(255,255,255,0.25)"/>
+        <circle cx="25" cy="12" r="2" fill="rgba(255,255,255,0.15)"/>
+        <rect x="10" y="22" width="12" height="1.5" rx="1" fill="rgba(255,255,255,0.3)"/>
+        <rect x="10" y="26" width="20" height="1.5" rx="1" fill="rgba(255,255,255,0.2)"/>
+        <rect x="10" y="30" width="16" height="1.5" rx="1" fill="rgba(255,255,255,0.15)"/>
+        <rect x="28" y="22" width="12" height="12" rx="3" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" strokeWidth="1"/>
       </svg>
     ),
   },
@@ -26,10 +33,17 @@ const services = [
     description:
       "Référencement naturel, Google Ads, Social Ads & Analytics. Soyez visible là où vos clients vous cherchent.",
     tags: ["SEO", "Google Ads", "Social Ads", "Analytics"],
-    icon: (
-      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"/>
-        <path d="M13.5 7.5L15 6M15.5 11H17M13.5 14.5L15 16"/>
+    illustration: (
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <polyline points="6,36 16,24 24,28 34,14 42,18" stroke="rgba(255,255,255,0.15)" strokeWidth="1.5" fill="none"/>
+        <polyline points="6,36 16,24 24,28 34,14 42,18" stroke="rgba(255,255,255,0.5)" strokeWidth="2" fill="none" strokeDasharray="4 2"/>
+        <circle cx="16" cy="24" r="3" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="24" cy="28" r="3" fill="rgba(255,255,255,0.3)"/>
+        <circle cx="34" cy="14" r="3" fill="rgba(255,255,255,0.5)"/>
+        <circle cx="42" cy="18" r="3" fill="rgba(255,255,255,0.3)"/>
+        <rect x="30" y="10" width="16" height="8" rx="2" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
+        <line x1="6" y1="38" x2="42" y2="38" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
+        <line x1="6" y1="12" x2="6" y2="38" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
       </svg>
     ),
   },
@@ -40,10 +54,18 @@ const services = [
     description:
       "UX Research, wireframes et design responsive. Des interfaces intuitives qui enchantent vos utilisateurs.",
     tags: ["UX Research", "Wireframes", "UI Design", "Responsive"],
-    icon: (
-      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="3"/>
-        <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+    illustration: (
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <rect x="6" y="6" width="36" height="36" rx="8" stroke="rgba(255,255,255,0.2)" strokeWidth="1.5" fill="rgba(255,255,255,0.03)"/>
+        <circle cx="24" cy="20" r="7" stroke="rgba(255,255,255,0.35)" strokeWidth="1.5" fill="rgba(255,255,255,0.05)"/>
+        <circle cx="24" cy="20" r="3" fill="rgba(255,255,255,0.25)"/>
+        <line x1="24" y1="6" x2="24" y2="13" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
+        <line x1="24" y1="27" x2="24" y2="34" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
+        <line x1="6" y1="20" x2="13" y2="20" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
+        <line x1="35" y1="20" x2="42" y2="20" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
+        <rect x="10" y="34" width="8" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+        <rect x="20" y="34" width="8" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+        <rect x="30" y="34" width="8" height="4" rx="2" fill="rgba(255,255,255,0.05)"/>
       </svg>
     ),
   },
@@ -54,9 +76,16 @@ const services = [
     description:
       "Étude de marché, tunnel de conversion & plan marketing. Une vision claire pour une croissance durable.",
     tags: ["Étude de marché", "Tunnel de conversion", "Plan marketing"],
-    icon: (
-      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+    illustration: (
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="18" stroke="rgba(255,255,255,0.12)" strokeWidth="1.5"/>
+        <circle cx="24" cy="24" r="12" stroke="rgba(255,255,255,0.18)" strokeWidth="1.5"/>
+        <circle cx="24" cy="24" r="6" stroke="rgba(255,255,255,0.25)" strokeWidth="1.5"/>
+        <circle cx="24" cy="24" r="2" fill="rgba(255,255,255,0.6)"/>
+        <line x1="24" y1="6" x2="24" y2="42" stroke="rgba(255,255,255,0.08)" strokeWidth="1"/>
+        <line x1="6" y1="24" x2="42" y2="24" stroke="rgba(255,255,255,0.08)" strokeWidth="1"/>
+        <circle cx="24" cy="12" r="2.5" fill="rgba(255,255,255,0.35)"/>
+        <circle cx="36" cy="24" r="2.5" fill="rgba(255,255,255,0.25)"/>
       </svg>
     ),
   },
@@ -138,15 +167,29 @@ function ServiceCard({ service }: { service: (typeof services)[0] }) {
         />
 
         <div className="relative z-10">
-          {/* Number + Icon */}
-          <div className="flex items-center justify-between mb-6">
-            <span className="text-brand-gold/30 text-4xl font-bold font-mono leading-none"
-              style={{ fontFamily: "var(--font-syne)" }}>
-              {service.number}
-            </span>
-            <div className="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center text-brand-gold group-hover:bg-brand-gold/20 transition-colors duration-300">
-              {service.icon}
-            </div>
+          {/* Number */}
+          <span
+            className="text-brand-gold/30 text-4xl font-bold font-mono leading-none block mb-5"
+            style={{ fontFamily: "var(--font-syne)" }}
+          >
+            {service.number}
+          </span>
+
+          {/* SVG Illustration */}
+          <div
+            style={{
+              width: "64px",
+              height: "64px",
+              borderRadius: "16px",
+              background: "rgba(255,255,255,0.06)",
+              border: "1px solid rgba(255,255,255,0.1)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "1.25rem",
+            }}
+          >
+            {service.illustration}
           </div>
 
           {/* Title */}
